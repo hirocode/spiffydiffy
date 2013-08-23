@@ -1,0 +1,127 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Contest - Dick VS Weiner Dog!</title>
+
+        <script type='text/javascript' src='js/libs/mootools-1.4.5/mootools.js'></script>
+        <script type='text/javascript' src='js/libs/jquery-1.9.0/jquery.min.js'></script>
+        <script type='text/javascript' src='js/libs/utils.js'></script>
+
+        <link rel="stylesheet" type="text/css" href="/css/normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/result-light.css"/>
+
+        <style type='text/css'>
+            body {
+                font-family: Helvetica, Sans, Arial;
+            }
+            p, ul {
+                padding: 10px;
+            }
+            ul {
+                margin: 5px;
+                border: 2px dashed #999;
+            }
+
+            td.content{
+                background-color:#EEEEEE;
+                height:200px;
+                width:48%;
+                border:1px solid;
+                margin: 5px 5px 5px 5px;
+                padding: 5px 5px 5px 5px;
+            }
+
+            td.comment{
+                text-align:left;
+            }
+
+            td.contentleft{
+                text-align:right;
+            }
+
+            table.content{
+                width:100%;
+                padding: 5px;
+                border-spacing: 5px;
+            }
+
+            #container{
+                width:50%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            #title{
+               font-family: Helvetica, Sans, Arial;
+               font-size: 25px;
+            }
+            
+            .title_choice{
+                font-weight: bold;
+            }
+        </style>
+
+        <script type='text/javascript'>//<![CDATA[ 
+            window.addEvent('load', function() {
+                $('#content1').empty();
+                $('#content1').append(getContent('dick'));
+
+                $('#content2').empty();
+                $('#content2').append(getContent('wienerdog'));
+            }); //]]>  
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <label id='title'>Dick VS Weiner Dog</label>
+            </div>
+            <div><img src='img/like.jpg' width="70px" /></div>
+
+            <table class="content">
+                <tr>
+                    <td>Dick</td>
+                    <td>Weiner Dog </td>
+                </tr>
+                <tr>
+                    <td id="content1" class="content">Content A</td>
+                    <td id="content2" class="content">Content B</td>
+                </tr>
+                <tr>
+                    <td><img src='img/checkbox_unchecked.png' /> (47 votes)</td>
+                    <td><img src='img/checkbox_checked.png'  /> (1,452,343 votes)</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label for="male">Why did you choose: </label><label class='title_choice'>Weiner Dog</label><label>? (Optional)</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea rows="4" cols="50">I just find the weiner dog much more enjoyable!</textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="commentlist">
+                <table>
+                    <tr>
+                        <td><label for="male">What others are saying: </label></td>
+                    </tr>
+                    <tr>
+                        <td class="user"><img src="img/chad_user.jpg"/></td>
+                        <td class="comment">Personally, I feel a bit threatened by the weiner dog.  I'm voting Dick!</td>
+                        <td style='text-align: center'><img src='img/like.jpg' width="60px" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+
+
